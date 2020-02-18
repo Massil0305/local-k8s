@@ -36,7 +36,7 @@ kworker2                  running (virtualbox)
 vagrant creates a hidden directory .vagrant where the ssh keys are stored 
 
 ssh -i .vagrant/machines/kmaster/virtualbox/private_key vagrant@172.42.42.100
-
+```
 
 ## Networking:
 
