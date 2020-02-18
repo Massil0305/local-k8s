@@ -27,14 +27,14 @@ Current machine states:
 kmaster                   running (virtualbox)
 kworker1                  running (virtualbox)
 kworker2                  running (virtualbox)
-```	
+
 2- vagrant ssh kmaster # To login to the master node
-````
+```
 
 ### Or using ssh
 
 vagrant creates a hidden directory .vagrant where the ssh keys are stored 
-
+```
 ssh -i .vagrant/machines/kmaster/virtualbox/private_key vagrant@172.42.42.100
 ```
 
