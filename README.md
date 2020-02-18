@@ -1,4 +1,4 @@
-# Spin up a k8s cluster using Vagrant
+## Spin up a k8s cluster using Vagrant
 This repository creates 3 local VMs:
 
 - 1 Master node 
@@ -28,15 +28,15 @@ kmaster                   running (virtualbox)
 kworker1                  running (virtualbox)
 kworker2                  running (virtualbox)
 ```	
-2- 2- vagrant ssh kmaster # To login to the master node
+2- vagrant ssh kmaster # To login to the master node
 ````
 
 ### Or using ssh
 
 vagrant creates a hidden directory .vagrant where the ssh keys are stored 
-```
+
 ssh -i .vagrant/machines/kmaster/virtualbox/private_key vagrant@172.42.42.100
-```
+
 
 ## Networking:
 
@@ -46,7 +46,7 @@ This setup uses the networking as below :
 - kworker2: 172.42.42.102
 
 ## Note:
-It is recommend to use  ```vagrant suspend``` before switch off your laptop to save the configuration
+It is recommended to use ```vagrant suspend``` before switch off your laptop to save the configuration
 To completely destroy the VMS:
 ``` vagrant destroy -f ```
 
